@@ -14,7 +14,7 @@ import RentalAndResourcesPage from './pages/RentalAndResourcesPage';
 import CommercialAndBusinessPage from './pages/CommercialAndBusinessPage';
 import RuralAndSemiUrbanPage from './pages/RuralAndSemiUrbanPage';
 import PersonalAndCarePage from './pages/PersonalAndCarePage';
-import ProtectedRoute from './components/protectedRoute';
+import ProtectedRoute from './components/ProtectedRoute';
 import UtilityAndGovernmentPage from './pages/UtilityAndGovernmentPage';
 import { Toaster } from './components/ui/toaster';
 import ProfilePage from './pages/ProfilePage';
