@@ -1,0 +1,28 @@
+# Firebase credentials
+backend/app/credentials/firebase-admin.json
+
+# Environment files
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+
+# SQLite database
+*.db
+
+# Node
+Frontend/node_modules/
+frontend/node_modules/
+
+# Build
+Frontend/dist/
+frontend/dist/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
