@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import API from "../api/api";
 import { useParams } from "react-router-dom";
-
+import LoadingSkeleton from "@/components/LoadingSkeleton";
 import { getSingleService } from "../api/services";
 
 const ServiceDetailsPage = () => {
@@ -35,13 +35,8 @@ const ServiceDetailsPage = () => {
   }, [id]);
 
   if (loading) {
-
-    return (
-      <div className="p-10 text-center">
-        Loading...
-      </div>
-    );
-  }
+    return <LoadingSkeleton />;
+}
 
   if (!service) {
 

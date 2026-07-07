@@ -8,6 +8,7 @@ import {
 getCustomerDashboard
 }
 from "../api/dashboard";
+import LoadingSkeleton from "@/components/LoadingSkeleton";
 import {
     Heart,
     CalendarDays,
@@ -100,19 +101,9 @@ const AccountPage = () => {
 
     }, []);
 
-    if (loading) {
-
-        return (
-
-            <div className="min-h-screen flex items-center justify-center">
-
-                Loading Dashboard...
-
-            </div>
-
-        );
-
-    }
+   if (loading) {
+    return <LoadingSkeleton />;
+}
 
     const userName =
         dashboard?.customer_name || "Customer";

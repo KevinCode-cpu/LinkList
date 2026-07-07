@@ -4,7 +4,7 @@ import React, {
 } from "react";
 
 import { useNavigate } from "react-router-dom";
-
+import LoadingSkeleton from "@/components/LoadingSkeleton";
 import {
 
     UserCircle,
@@ -128,18 +128,8 @@ const ProfilePage = () => {
     };
 
     if (loading) {
-
-        return (
-
-            <div className="min-h-screen flex items-center justify-center">
-
-                Loading Profile...
-
-            </div>
-
-        );
-
-    }
+    return <LoadingSkeleton />;
+}
 
  return (
 

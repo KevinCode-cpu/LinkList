@@ -6,7 +6,7 @@ import React, {
 import {
     getProfile
 } from "../api/profile";
-
+import LoadingSkeleton from "@/components/LoadingSkeleton";
 import {
   getMyRequests
 } from "../api/callbacks";
@@ -140,18 +140,8 @@ async () => {
 
   }, []);
 
-  if(loading){
-
-  return (
-
-    <div className="p-10">
-
-      Loading Dashboard...
-
-    </div>
-
-  );
-
+  if (loading) {
+    return <LoadingSkeleton />;
 }
 
   const accepted =

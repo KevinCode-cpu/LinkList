@@ -16,7 +16,7 @@ import {
   CalendarDays,
   Zap
 } from "lucide-react";
-
+import LoadingSkeleton from "@/components/LoadingSkeleton";
 import { createCallbackRequest } from "../api/callbacks";
 import { getProvider } from "../api/providers";
 import { getReviews } from "../api/reviews";
@@ -121,15 +121,7 @@ getReviews(data.services[0].id)
 
 if(!demoProvider && !provider){
 
-return(
-
-<div className="min-h-screen flex items-center justify-center text-xl font-semibold">
-
-Loading Provider...
-
-</div>
-
-);
+return <LoadingSkeleton />;
 
 }
 
