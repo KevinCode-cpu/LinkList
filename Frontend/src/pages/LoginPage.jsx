@@ -210,7 +210,7 @@ localStorage.setItem(
 
         const response = await fetch(
 
-            "http://127.0.0.1:8000/auth/google",
+            "https://linklist-s1ut.onrender.com/auth/google",
 
             {
 
