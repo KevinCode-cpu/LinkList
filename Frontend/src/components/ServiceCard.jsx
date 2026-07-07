@@ -17,7 +17,7 @@ const ServiceCard = ({ service }) => {
   const handleContact = (serviceName) => {
     toast({
       title: "Contact Feature",
-      description: "🚧 This feature isn't implemented yet—we are working upon it! 🚧",
+      description: "This feature isn't implemented yet—we are working upon it!",
       duration: 3000,
     });
   };
@@ -70,10 +70,10 @@ const ServiceCard = ({ service }) => {
             <div className="flex items-center space-x-1 bg-yellow-50 px-2 py-1 rounded-md border border-yellow-100">
               <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
               <span className="text-sm font-bold text-gray-900">
-                {service.average_rating || 0}
+                {service.rating || 0}
               </span>
               <span className="text-xs text-gray-500">
-                ({service.total_reviews || 0})
+                ({service.reviews || 0})
               </span>
             </div>
 
